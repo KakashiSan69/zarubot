@@ -75,7 +75,7 @@
 			"required": false
 		},
 		"YOUTUBE_MAX_RETRIES": {
-			"description": "Maximum retry attempts for YouTube downloads (default: 3)",
+			"description": "Maximum rGetry attempts for YouTube downloads (default: 3)",
 			"required": false
 		},
 		"YOUTUBE_RETRY_DELAY": {
@@ -120,3 +120,4 @@
 	],
 	"addons": []
 }
+
