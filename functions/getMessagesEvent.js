@@ -15,12 +15,13 @@ import { commandsPublic, commandsMembers, commandsAdmins, commandsOwners } from 
 
 // These will be used for permission checks
 const myNumber = [
-	process.env.MY_NUMBER.split(",")[0] + "@s.whatsapp.net",
-	process.env.MY_NUMBER.split(",")[1] + "@lid",
+    process.env.MY_NUMBER.split(",")[0] + "@s.whatsapp.net",
+    process.env.MY_NUMBER.split(",")[1] + "@lid",
 ];
+
 const botNumber = [
-	process.env.BOT_NUMBER.split(",")[0] + "@s.whatsapp.net",
-	process.env.BOT_NUMBER.split(",")[1] + "@lid",
+    process.env.BOT_NUMBER.split(",")[0] + "@s.whatsapp.net",
+    process.env.BOT_NUMBER.split(",")[1] + "@lid",
 ];
 
 const getCommand = async (sock, msg, cache) => {
