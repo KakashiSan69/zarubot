@@ -342,23 +342,6 @@ const getCommand = async (sock, msg, cache) => {
 				(isGroup ? groupMetadata.subject : "Directs"),
 			msg
 		);
-		if (isGroup) {
-			let resBotOn = groupData ? await groupData.isBotOn : false;
-			if (resBotOn == false && !(command.startsWith("group") || command.startsWith("dev"))) {
-				return sendMessageWTyping(from, {
-					text:
-						"```By default, bot is turned off in this group.\nAsk the Owner to activate.\n\nUse ```" +
-						prefix +
-						"dev",
-				});
-			}
-			let blockCommandsInDB = await groupData?.cmdBlocked;
-			if (command != "") {
-				if (blockCommandsInDB.includes(command)) {
-					return sendMessageWTyping(from, { text: `Command blocked for this group.` }, { quoted: msg });
-				}
-			}
-		}
 		if (commandsPublic[command]) {
 			const t0 = Date.now();
 			const result = await commandsPublic[command](sock, msg, from, args, msgInfoObj);
