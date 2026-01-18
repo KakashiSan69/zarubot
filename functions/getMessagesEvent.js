@@ -254,7 +254,6 @@ const getCommand = async (sock, msg, cache) => {
 			}
 		}
 		//-------------------------------------------------------------------------------------------------------------//
-		if (senderData?.isBlock) return;
 		const groupAdmins = isGroup ? getGroupAdmins(groupMetadata.participants) : "";
 		const isGroupAdmin = groupAdmins?.includes(senderJid) || false;
 
