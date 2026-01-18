@@ -24,7 +24,7 @@ Our WhatsApp bot project allows users to easily perform various actions such as 
 |    -sticker crop    |                   Crop the sticker size                   |            `-sticker crop`             |            ✔            |
 |   -sticker author   |                Add metadata to the sticker                |          `-sticker author MD`          |            ✔            |
 |    -sticker pack    |                Add metadata to the sticker                |        `-sticker pack myBitBot`        |            ✔            |
-| -sticker nometadata |           Remove all metadata from the sticker            |         `-sticker nometadata`          |            ✔            |
+| -sticker nometadata |           Remove all metadata f  FFrom the sticker            |         `-sticker nometadata`          |            ✔            |
 |       -steal        |          Send a sticker with the bot's metadata           |                `-steal`                |            ✔            |
 |       -toimg        |               Convert a sticker to an image               |                `-toimg`                |            ✔            |
 |       -image        |               Convert a sticker to an image               |                `-image`                |            ✔            |
